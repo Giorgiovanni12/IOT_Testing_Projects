@@ -1,0 +1,72 @@
+[
+    {
+        "id": "4c82942dbadc8a28",
+        "type": "comment",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "ES1",
+        "info": "",
+        "x": 250,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "b377c12e1ce7da45",
+        "type": "inject",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{     \"name\": \"fred\",     \"surname\": \"jones\",     \"age\": 25,     \"email\": \"fred@acme.inc\" }",
+        "payloadType": "json",
+        "x": 210,
+        "y": 780,
+        "wires": [
+            [
+                "30977b3799f6e519"
+            ]
+        ]
+    },
+    {
+        "id": "30977b3799f6e519",
+        "type": "template",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is my name: {{payload.name}}  {{payload.surname}} !",
+        "output": "str",
+        "x": 480,
+        "y": 780,
+        "wires": [
+            [
+                "6bc4073552f10f3b"
+            ]
+        ]
+    },
+    {
+        "id": "6bc4073552f10f3b",
+        "type": "debug",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "debug 142",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 780,
+        "wires": []
+    }
+]

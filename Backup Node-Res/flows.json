@@ -1,0 +1,3002 @@
+[
+    {
+        "id": "29d7643872c0caae",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "94745c09d38c3943",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c358808b0e343ff4",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5a3ee0552e2daef9",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard ",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4316dc4991a10700",
+        "type": "ui_tab",
+        "name": "Random Jsonata",
+        "icon": "'wi-wu-sunny'",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7772b58c7fa55ce5",
+        "type": "ui_group",
+        "name": "input",
+        "tab": "4316dc4991a10700",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f22c71b587da7bb4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "Broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6fda31302c0f15ac",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 19
+    },
+    {
+        "id": "1f28dd1b0587d1a3",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "06e938f0e477797e",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fbc645b3af483c88",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a3fc6c386e02c9e2",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "05512e6c76d33027",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e57e197b1b0a6790",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2f7e7170ff095476",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ffcc85cf694b9b8f",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a94591cc96c49692",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 11,
+        "width": 19,
+        "height": 1
+    },
+    {
+        "id": "c15da41eb5d6554a",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "6fda31302c0f15ac",
+        "order": 12,
+        "width": 19,
+        "height": 1
+    },
+    {
+        "id": "e0ef4f3cec785c77",
+        "type": "ui_tab",
+        "name": "Cambio icona",
+        "icon": "\"send\"",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ee34cf088981c1ac",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d4dbff4e822a7890",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b3e9056a7dc74d53",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "4316dc4991a10700",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6cd3fe71160a9290",
+        "type": "ui_tab",
+        "name": "Prova Paziente Covid",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "961f66650c2f2aeb",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "6cd3fe71160a9290",
+        "order": 1,
+        "disp": true,
+        "width": 12
+    },
+    {
+        "id": "2a0f96ebd1ae6e18",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "961f66650c2f2aeb",
+        "order": 2,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "ad6f4c284ef2a6cc",
+        "type": "ui_spacer",
+        "z": "29d7643872c0caae",
+        "name": "spacer",
+        "group": "961f66650c2f2aeb",
+        "order": 3,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "187e62a36104d50a",
+        "type": "ui_tab",
+        "name": "Utente Allerta",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b19f483023bb3ed8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "187e62a36104d50a",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "b4e1a0bf221d82e6",
+        "type": "ui_link",
+        "name": "Link 7",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 7
+    },
+    {
+        "id": "2b76af56b54aa9c0",
+        "type": "ui_tab",
+        "name": "Notifiche Audio e testo a schermo",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "71522ead76a93777",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "2b76af56b54aa9c0",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "aba5d0f91f148b7a",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "e0ef4f3cec785c77",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4cd55b9453dbb499",
+        "type": "ui_link",
+        "name": "Link 7",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 6
+    },
+    {
+        "id": "aa6acd7b5b2c25e1",
+        "type": "ui_tab",
+        "name": "Prova Finale Per Oggi",
+        "icon": "dashboard",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4d18fd9bf26adde4",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "aa6acd7b5b2c25e1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9ce637ef7e60bd68",
+        "type": "ui_form",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "label": "",
+        "group": "6fda31302c0f15ac",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Nome",
+                "value": "Nome",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Cognome",
+                "value": "Cognome",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Eta",
+                "value": "Eta",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Codice Fiscale",
+                "value": "Codice Fiscale",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sintomi",
+                "value": "Sintomi",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Patologie Pregresse",
+                "value": "Patologie Pregresse",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Covidi negli ultimi 3 mesi",
+                "value": "Covidi negli ultimi 3 mesi",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Allerta",
+                "value": "allerta",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Nome": "",
+            "Cognome": "",
+            "Eta": "",
+            "Codice Fiscale": "",
+            "Sintomi": "",
+            "Patologie Pregresse": "",
+            "Covidi negli ultimi 3 mesi": false,
+            "allerta": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 90,
+        "y": 880,
+        "wires": [
+            [
+                "250d5a720ecfc13e",
+                "a4817b48939f403f"
+            ]
+        ]
+    },
+    {
+        "id": "250d5a720ecfc13e",
+        "type": "debug",
+        "z": "29d7643872c0caae",
+        "name": "debug 117",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "3761b8775d7e18ac",
+        "type": "debug",
+        "z": "29d7643872c0caae",
+        "name": "debug 118",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "2dc6de4b4998a10f",
+        "type": "ui_button",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "group": "ee34cf088981c1ac",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "pressed",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "pressed micio miao",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 213.05137634277344,
+        "y": 587.3236692779542,
+        "wires": [
+            [
+                "1bfbae082d6617cf",
+                "a5983b140b1fea54"
+            ]
+        ]
+    },
+    {
+        "id": "1bfbae082d6617cf",
+        "type": "debug",
+        "z": "29d7643872c0caae",
+        "name": "debug 108",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a5983b140b1fea54",
+        "type": "ui_text",
+        "z": "29d7643872c0caae",
+        "group": "ee34cf088981c1ac",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 422.7991027832029,
+        "y": 516.8118883590696,
+        "wires": []
+    },
+    {
+        "id": "7437038913c9e1e0",
+        "type": "ui_button",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "group": "ee34cf088981c1ac",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "miao",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "amazon",
+        "payload": " //",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 207.98046875,
+        "y": 497.61546516418457,
+        "wires": [
+            [
+                "a5983b140b1fea54",
+                "1bfbae082d6617cf"
+            ]
+        ]
+    },
+    {
+        "id": "b9976ed4a64d1e27",
+        "type": "comment",
+        "z": "29d7643872c0caae",
+        "name": "Cancelliamo il contenuto del text",
+        "info": "",
+        "x": 223.05137634277344,
+        "y": 367.3236692779542,
+        "wires": []
+    },
+    {
+        "id": "a4817b48939f403f",
+        "type": "switch",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "property": "payload.allerta",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "4",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 210,
+        "y": 960,
+        "wires": [
+            [
+                "50b2b54dcf33f954"
+            ]
+        ]
+    },
+    {
+        "id": "50b2b54dcf33f954",
+        "type": "change",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.allerta",
+                "pt": "msg",
+                "to": "msg.payload.allerta +2",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 1040,
+        "wires": [
+            [
+                "3761b8775d7e18ac"
+            ]
+        ]
+    },
+    {
+        "id": "d336810ff40a4980",
+        "type": "comment",
+        "z": "29d7643872c0caae",
+        "name": "Aumentiamo l alert dal form con condizioni",
+        "info": "",
+        "x": 200,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "95a306d8a3db11b6",
+        "type": "ui_form",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "label": "",
+        "group": "4d18fd9bf26adde4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Allerta",
+                "value": "allerta",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Covid",
+                "value": "covid",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "allerta": "",
+            "covid": false
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 330,
+        "y": 1280,
+        "wires": [
+            [
+                "09a3ca8ebd093a3c"
+            ]
+        ]
+    },
+    {
+        "id": "09a3ca8ebd093a3c",
+        "type": "switch",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "property": "payload.covid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 1320,
+        "wires": [
+            [
+                "7cf97f36fd083c12"
+            ]
+        ]
+    },
+    {
+        "id": "7cf97f36fd083c12",
+        "type": "change",
+        "z": "29d7643872c0caae",
+        "name": "Concat",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.allerta",
+                "pt": "msg",
+                "to": "payload.allerta + 2",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"Il paziente \" &msg.payload.name &\" \" & \"Ha uno stato di allerta di:\" &msg.payload.allerta",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 1420,
+        "wires": [
+            [
+                "f0cbdc93b3031a0e",
+                "a051015bc6ab98c0"
+            ]
+        ]
+    },
+    {
+        "id": "f0cbdc93b3031a0e",
+        "type": "ui_text_input",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "4d18fd9bf26adde4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1080,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a051015bc6ab98c0",
+        "type": "debug",
+        "z": "29d7643872c0caae",
+        "name": "debug 139",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "3608ef4b67889319",
+        "type": "comment",
+        "z": "29d7643872c0caae",
+        "name": "Se spuntato il checkbox ==> condizione",
+        "info": "",
+        "x": 990,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "9f7b0c11ffced676",
+        "type": "inject",
+        "z": "94745c09d38c3943",
+        "name": "Utente 1",
+        "props": [
+            {
+                "p": "name",
+                "v": "Davide",
+                "vt": "str"
+            },
+            {
+                "p": "surname",
+                "v": "Gomba",
+                "vt": "str"
+            },
+            {
+                "p": "age",
+                "v": "41",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 114.06743960910353,
+        "y": 185.35823091820612,
+        "wires": [
+            [
+                "1d23e1123f216d7a",
+                "0ebebe0ba6946d23",
+                "e40ec191536c5eeb"
+            ]
+        ]
+    },
+    {
+        "id": "2a74064172b0f2f0",
+        "type": "debug",
+        "z": "94745c09d38c3943",
+        "name": "debug 134",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1214.0674396091035,
+        "y": 385.3582309182061,
+        "wires": []
+    },
+    {
+        "id": "1d23e1123f216d7a",
+        "type": "switch",
+        "z": "94745c09d38c3943",
+        "name": "Controllo di Età",
+        "property": "age",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "25",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "25",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 454.06743960910353,
+        "y": 385.3582309182061,
+        "wires": [
+            [
+                "794a831081342ce3"
+            ],
+            [
+                "5934f88e19d5b6cc"
+            ]
+        ]
+    },
+    {
+        "id": "b9d3e8daf3ce522d",
+        "type": "inject",
+        "z": "94745c09d38c3943",
+        "name": "Utente 2",
+        "props": [
+            {
+                "p": "name",
+                "v": "Sabrina",
+                "vt": "str"
+            },
+            {
+                "p": "surname",
+                "v": "Ferilli",
+                "vt": "str"
+            },
+            {
+                "p": "age",
+                "v": "22",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 114.06743960910353,
+        "y": 485.3582309182061,
+        "wires": [
+            [
+                "1d23e1123f216d7a",
+                "0ebebe0ba6946d23",
+                "e40ec191536c5eeb"
+            ]
+        ]
+    },
+    {
+        "id": "5e74cd8bfcb19b75",
+        "type": "debug",
+        "z": "94745c09d38c3943",
+        "name": "debug 135",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1214.0674396091035,
+        "y": 525.3582309182061,
+        "wires": []
+    },
+    {
+        "id": "794a831081342ce3",
+        "type": "change",
+        "z": "94745c09d38c3943",
+        "name": "sei vecchio",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "sei vecchio",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 804.0674396091035,
+        "y": 345.3582309182061,
+        "wires": [
+            [
+                "80a340069bbce8b8"
+            ]
+        ]
+    },
+    {
+        "id": "5934f88e19d5b6cc",
+        "type": "change",
+        "z": "94745c09d38c3943",
+        "name": "sei giovane",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "sei ggggiovane",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 784.0674396091035,
+        "y": 485.3582309182061,
+        "wires": [
+            [
+                "5e74cd8bfcb19b75"
+            ]
+        ]
+    },
+    {
+        "id": "80a340069bbce8b8",
+        "type": "change",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "age",
+                "pt": "msg",
+                "to": "21",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1024.0674396091035,
+        "y": 365.3582309182061,
+        "wires": [
+            [
+                "2a74064172b0f2f0"
+            ]
+        ]
+    },
+    {
+        "id": "0ebebe0ba6946d23",
+        "type": "template",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "field": "scritta",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{name}} {{surname}} ha {{age}} anni. ",
+        "output": "str",
+        "x": 554.0674396091035,
+        "y": 145.35823091820612,
+        "wires": [
+            [
+                "537f8e2fb4213738"
+            ]
+        ]
+    },
+    {
+        "id": "537f8e2fb4213738",
+        "type": "debug",
+        "z": "94745c09d38c3943",
+        "name": "debug 136",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "scritta",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 874.0674396091035,
+        "y": 105.35823091820612,
+        "wires": []
+    },
+    {
+        "id": "e40ec191536c5eeb",
+        "type": "change",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "name & \" \" & surname & \" ha \" & age & \" anni\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 714.0674396091035,
+        "y": 225.35823091820612,
+        "wires": [
+            [
+                "05648663bc9f8194"
+            ]
+        ]
+    },
+    {
+        "id": "05648663bc9f8194",
+        "type": "debug",
+        "z": "94745c09d38c3943",
+        "name": "debug 137",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1014.0674396091035,
+        "y": 245.35823091820612,
+        "wires": []
+    },
+    {
+        "id": "fdacbca1cc0b704b",
+        "type": "comment",
+        "z": "94745c09d38c3943",
+        "name": "Controllo età e uso del template",
+        "info": "",
+        "x": 250,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1d83539fd8fd0759",
+        "type": "comment",
+        "z": "94745c09d38c3943",
+        "name": "PROVA SENZA DASHBOARD",
+        "info": "",
+        "x": 680,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "38d4b0f537d5ad45",
+        "type": "inject",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "number",
+                "v": "32",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Che numero devo fare",
+        "payload": "Prova",
+        "payloadType": "str",
+        "x": 220,
+        "y": 940,
+        "wires": [
+            [
+                "308c14ded208b89d",
+                "2c3e139a3fc3065b"
+            ]
+        ]
+    },
+    {
+        "id": "5e7c9e06fc94b384",
+        "type": "debug",
+        "z": "94745c09d38c3943",
+        "name": "debug 119",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "131582b3f575856a",
+        "type": "switch",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "property": "number",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "31",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "32",
+                "vt": "str"
+            },
+            {
+                "t": "lt",
+                "v": "12",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "32",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "391d67a219c638a7"
+            ],
+            [
+                "6b9802e3c5ecd602"
+            ],
+            [
+                "1748ccf2a09cd3c9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "391d67a219c638a7",
+        "type": "change",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Micio miao",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 700,
+        "wires": [
+            [
+                "5e7c9e06fc94b384"
+            ]
+        ]
+    },
+    {
+        "id": "6b9802e3c5ecd602",
+        "type": "template",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} and this is the number : {{number}} !",
+        "output": "str",
+        "x": 840,
+        "y": 860,
+        "wires": [
+            [
+                "5e7c9e06fc94b384"
+            ]
+        ]
+    },
+    {
+        "id": "308c14ded208b89d",
+        "type": "debug",
+        "z": "94745c09d38c3943",
+        "name": "debug 120",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "1748ccf2a09cd3c9",
+        "type": "change",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"prova\":\"bello\",\"icon\":\"amazon\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 1000,
+        "wires": [
+            [
+                "5e7c9e06fc94b384"
+            ]
+        ]
+    },
+    {
+        "id": "2c3e139a3fc3065b",
+        "type": "change",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Giovanni Svegliati",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 820,
+        "wires": [
+            [
+                "131582b3f575856a"
+            ]
+        ]
+    },
+    {
+        "id": "237ff19f8565a1b3",
+        "type": "comment",
+        "z": "94745c09d38c3943",
+        "name": "Prova sui numeri e sui template",
+        "info": "",
+        "x": 270,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "dd719e293fce6b82",
+        "type": "inject",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Davide\",\"surname\":\"Gomba\",\"age\":41,\"gender\":\"Maschio\",\"date\":\"2002-02-12T23:00:00.000Z\",\"mail\":\"pippo@pluto.it\"}",
+        "payloadType": "json",
+        "x": 150,
+        "y": 1480,
+        "wires": [
+            [
+                "937d81470a640ff1",
+                "d9ee8802e95b829e",
+                "1995930a76437265"
+            ]
+        ]
+    },
+    {
+        "id": "937d81470a640ff1",
+        "type": "template",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.name}} {{payload.surname}} ha {{payload.age}} anni e si dichiara template {{payload.gender}}",
+        "output": "str",
+        "x": 500,
+        "y": 1380,
+        "wires": [
+            [
+                "e1b8b54e690af11b"
+            ]
+        ]
+    },
+    {
+        "id": "d9ee8802e95b829e",
+        "type": "change",
+        "z": "94745c09d38c3943",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.name & \" \" & payload.surname & \" ha \" & payload.age & \" anni e s dichiara \" & payload.gender ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 1540,
+        "wires": [
+            [
+                "e1b8b54e690af11b",
+                "89338f18c69161a9"
+            ]
+        ]
+    },
+    {
+        "id": "e1b8b54e690af11b",
+        "type": "debug",
+        "z": "94745c09d38c3943",
+        "name": "debug 112",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "89338f18c69161a9",
+        "type": "ui_text",
+        "z": "94745c09d38c3943",
+        "group": "961f66650c2f2aeb",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "concatenazione",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 800,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "1995930a76437265",
+        "type": "debug",
+        "z": "94745c09d38c3943",
+        "name": "debug 138",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "f2f2061cc35042e0",
+        "type": "comment",
+        "z": "94745c09d38c3943",
+        "name": "Concatenzaione da un form con template e jsonata",
+        "info": "",
+        "x": 970,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "3b82a2dee201d779",
+        "type": "inject",
+        "z": "c358808b0e343ff4",
+        "name": "Utente Per Mappa",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Joe\",\"lat\":51,\"lon\":-1.05,\"allerta\":5,\"icon\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSwZQvdEs_ieuSSpCTtDmNZFRqeyZxw340VzHGGjHAhA&s\"}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 380,
+        "wires": [
+            [
+                "f667a6aeed7d22a7"
+            ]
+        ]
+    },
+    {
+        "id": "56e54b3b412472bd",
+        "type": "debug",
+        "z": "c358808b0e343ff4",
+        "name": "debug 130",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "d1c761963feb1369",
+        "type": "ui_worldmap",
+        "z": "c358808b0e343ff4",
+        "group": "b19f483023bb3ed8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "lat": "45.08176",
+        "lon": "7.66024",
+        "zoom": "18",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS,SW",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 700,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "595d10344eacf865",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "aggiungi 2 se allerta alta",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.allerta",
+                "pt": "msg",
+                "to": "msg.payload.allerta +2",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.icon",
+                "pt": "msg",
+                "to": "https://static-00.iconduck.com/assets.00/exploding-head-emoji-512x486-x1g2lnz1.png",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 620,
+        "wires": [
+            [
+                "56e54b3b412472bd",
+                "d1c761963feb1369"
+            ]
+        ]
+    },
+    {
+        "id": "f667a6aeed7d22a7",
+        "type": "switch",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "property": "payload.allerta",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "4",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "4",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 460,
+        "wires": [
+            [
+                "d1c761963feb1369",
+                "4da9ae78b20c4a27"
+            ],
+            [
+                "595d10344eacf865",
+                "350c1674c4b13fad"
+            ]
+        ]
+    },
+    {
+        "id": "04a62eb6e6e7fa53",
+        "type": "comment",
+        "z": "c358808b0e343ff4",
+        "name": "UTENTE CON ALLERTA",
+        "info": "INject di un utente con coordinate e icona.Se il payload.allerta è maggiore di 4 cambia l'icona e aggiungi altri 2 punti allerta e viene notificato con un popup il nome e il messaggio stai per esplodere",
+        "x": 250,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8665b217019c16a2",
+        "type": "ui_text_input",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "label": "Stato di allerta",
+        "tooltip": "",
+        "group": "b19f483023bb3ed8",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": 300,
+        "topic": "payload",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1180,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "350c1674c4b13fad",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"Stai per esplodere\" & \" \" &msg.payload.name",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 240,
+        "wires": [
+            [
+                "8665b217019c16a2",
+                "3b4da87479a8c17f"
+            ]
+        ]
+    },
+    {
+        "id": "3b4da87479a8c17f",
+        "type": "ui_toast",
+        "z": "c358808b0e343ff4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 930,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e19727522faf8841",
+        "type": "comment",
+        "z": "c358808b0e343ff4",
+        "name": "PROVA PER ESERCITAZIONE",
+        "info": "",
+        "x": 630,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4da9ae78b20c4a27",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"Non stai per esplodere tranquillo\" & \" \" &msg.payload.name",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 360,
+        "wires": [
+            [
+                "8665b217019c16a2"
+            ]
+        ]
+    },
+    {
+        "id": "0b700ed565cf3ecf",
+        "type": "ui_chart",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "group": "7772b58c7fa55ce5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1010,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82ae9fdf501e0c9d",
+        "type": "inject",
+        "z": "c358808b0e343ff4",
+        "name": "pinco pallino",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Umberto\",\"lat\":45.07632117731442,\"lon\":7.6700842317861175,\"umidita\":10,\"temperatura\":30,\"photourl\":\"https://cdn4.vectorstock.com/i/1000x1000/54/68/mysterious-man-under-spotlight-concept-vector-35125468.jpg\"}",
+        "payloadType": "json",
+        "x": 140.86817359924316,
+        "y": 917.6931129693985,
+        "wires": [
+            [
+                "0e6c7016f7ef15e3"
+            ]
+        ]
+    },
+    {
+        "id": "0e6c7016f7ef15e3",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.umidita",
+                "pt": "msg",
+                "to": "$random()*10",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200.86370086669922,
+        "y": 970.2197246551514,
+        "wires": [
+            [
+                "4a7c3c67de109568"
+            ]
+        ]
+    },
+    {
+        "id": "4a7c3c67de109568",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.temperatura",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 1020,
+        "wires": [
+            [
+                "87885e150fc9ed75",
+                "d9994d0083f3c543",
+                "b6e7e5a923ec29c3",
+                "daed4f5e9b10ae86"
+            ]
+        ]
+    },
+    {
+        "id": "87885e150fc9ed75",
+        "type": "ui_worldmap",
+        "z": "c358808b0e343ff4",
+        "group": "7772b58c7fa55ce5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "lat": "45.08176",
+        "lon": "7.66024",
+        "zoom": "18",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS,SW",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 500,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "d9994d0083f3c543",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "random temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temperatura",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "temperatura",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1000,
+        "wires": [
+            [
+                "0b700ed565cf3ecf"
+            ]
+        ]
+    },
+    {
+        "id": "b6e7e5a923ec29c3",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "random umidità",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.umidita",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 1060,
+        "wires": [
+            [
+                "0b700ed565cf3ecf",
+                "a95af27fb3d0970c"
+            ]
+        ]
+    },
+    {
+        "id": "a95af27fb3d0970c",
+        "type": "debug",
+        "z": "c358808b0e343ff4",
+        "name": "debug 132",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "2790206090fb6f6f",
+        "type": "comment",
+        "z": "c358808b0e343ff4",
+        "name": "inseriamo un grafico ed una mappa nella stesa pagina web",
+        "info": "",
+        "x": 440,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "090291e535f3c107",
+        "type": "comment",
+        "z": "c358808b0e343ff4",
+        "name": "Assegnamo dei numeri random attraverso jsonata",
+        "info": "$random() genere un numero da 0 a 1 se \nlo moltiplichiamo per 10 va fino a 10\n\n$random()*10",
+        "x": 210,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "c2d0e2c2c8a4ada2",
+        "type": "comment",
+        "z": "c358808b0e343ff4",
+        "name": "Entrambi i dati vengono inseriti dentro il grafico ",
+        "info": "",
+        "x": 880,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "daed4f5e9b10ae86",
+        "type": "debug",
+        "z": "c358808b0e343ff4",
+        "name": "debug 131",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "9572173e4f9dfdd6",
+        "type": "ui_button",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "group": "71522ead76a93777",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "random",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "pressed",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 1500,
+        "wires": [
+            [
+                "da6d4af9a1e8da35",
+                "cf8a11395099a2e3",
+                "046fd5653371e314"
+            ]
+        ]
+    },
+    {
+        "id": "da6d4af9a1e8da35",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "random temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$random()*10",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "temperatura",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 376.6277503967285,
+        "y": 1478.708794593811,
+        "wires": [
+            [
+                "93d8f590e05c748f",
+                "c7e5b1dd436076c6",
+                "2e042ce07d362cd8"
+            ]
+        ]
+    },
+    {
+        "id": "cf8a11395099a2e3",
+        "type": "debug",
+        "z": "c358808b0e343ff4",
+        "name": "debug 133",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "93d8f590e05c748f",
+        "type": "ui_chart",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "group": "71522ead76a93777",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 730,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7e5b1dd436076c6",
+        "type": "ui_gauge",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "group": "71522ead76a93777",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "71aa2d296434b610",
+        "type": "ui_toast",
+        "z": "c358808b0e343ff4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1200,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "2e042ce07d362cd8",
+        "type": "switch",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "5",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 604.6812744140625,
+        "y": 1448.059970855713,
+        "wires": [
+            [
+                "d821b77b3959b0cc"
+            ]
+        ]
+    },
+    {
+        "id": "d821b77b3959b0cc",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Stai per Esplodere",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 784.6438827514648,
+        "y": 1519.9263563156128,
+        "wires": [
+            [
+                "71aa2d296434b610",
+                "aaed40bdcfd4f29a"
+            ]
+        ]
+    },
+    {
+        "id": "aaed40bdcfd4f29a",
+        "type": "ui_audio",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "group": "71522ead76a93777",
+        "voice": "Chrome OS français 5",
+        "always": true,
+        "x": 1140,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "046fd5653371e314",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "random umidità",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "umidità",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350.45394134521484,
+        "y": 1526.1832361221313,
+        "wires": [
+            [
+                "93d8f590e05c748f"
+            ]
+        ]
+    },
+    {
+        "id": "7d92f76fa4cf95a0",
+        "type": "comment",
+        "z": "c358808b0e343ff4",
+        "name": "Mette dentro il grafico la temperatura e se supera tot notifica un messaggio",
+        "info": "",
+        "x": 1010,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "e364d414503b5804",
+        "type": "comment",
+        "z": "c358808b0e343ff4",
+        "name": "notifiche audio e a schermo",
+        "info": "",
+        "x": 820,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "7d9d26ecd2c7e463",
+        "type": "ui_worldmap",
+        "z": "c358808b0e343ff4",
+        "group": "aba5d0f91f148b7a",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "lat": "45.08176",
+        "lon": "7.66024",
+        "zoom": "18",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS,SW",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 900,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "08d8f14c29ac100d",
+        "type": "switch",
+        "z": "c358808b0e343ff4",
+        "name": "Cambio Icona",
+        "property": "payload.alert",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "3",
+                "vt": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "4",
+                "vt": "num",
+                "v2": "7",
+                "v2t": "num"
+            },
+            {
+                "t": "gt",
+                "v": "7",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 320,
+        "y": 2060,
+        "wires": [
+            [
+                "0bacd25113369c60"
+            ],
+            [
+                "c4701ca017a1dbad"
+            ],
+            [
+                "a5a259545c630581"
+            ]
+        ]
+    },
+    {
+        "id": "0bacd25113369c60",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "prima icona",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.icon",
+                "pt": "msg",
+                "to": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSwZQvdEs_ieuSSpCTtDmNZFRqeyZxw340VzHGGjHAhA&s",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 1940,
+        "wires": [
+            [
+                "7d9d26ecd2c7e463"
+            ]
+        ]
+    },
+    {
+        "id": "c4701ca017a1dbad",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.icon",
+                "pt": "msg",
+                "to": "https://static-00.iconduck.com/assets.00/exploding-head-emoji-512x486-x1g2lnz1.png",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 2040,
+        "wires": [
+            [
+                "7d9d26ecd2c7e463"
+            ]
+        ]
+    },
+    {
+        "id": "a5a259545c630581",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.icon",
+                "pt": "msg",
+                "to": "https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/umbrella-with-rain-drops.png",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 2140,
+        "wires": [
+            [
+                "7d9d26ecd2c7e463"
+            ]
+        ]
+    },
+    {
+        "id": "0aa4248b8f67149e",
+        "type": "inject",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Dario\",\"lat\":45.06820438387959,\"lon\":7.6671110450538595,\"umidita\":3.092070571538661,\"temperatura\":45.50083987008489,\"alert\":4}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 2080,
+        "wires": [
+            [
+                "08d8f14c29ac100d"
+            ]
+        ]
+    },
+    {
+        "id": "d630ea68d45f042b",
+        "type": "comment",
+        "z": "c358808b0e343ff4",
+        "name": "Cambio icona in base all'alert",
+        "info": "",
+        "x": 220,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "1c8bd23ae5f847a9",
+        "type": "ui_form",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "label": "",
+        "group": "961f66650c2f2aeb",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "NOME",
+                "value": "nome",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "COGNOME",
+                "value": "cognome",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "ANNO DI NASCITA",
+                "value": "nascita",
+                "type": "date",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "SESSO",
+                "value": "sesso",
+                "type": "switch",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "ALLERTA",
+                "value": "allerta",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "COVIDDI SI O NO",
+                "value": "covid",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "nome": "",
+            "cognome": "",
+            "nascita": "",
+            "sesso": false,
+            "allerta": "",
+            "covid": false
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancella",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 150,
+        "y": 2520,
+        "wires": [
+            [
+                "5ba130685ef0793c",
+                "78c4039cc8e1776f",
+                "54e7032d5e19eab0"
+            ]
+        ]
+    },
+    {
+        "id": "028e35cd77122e47",
+        "type": "ui_toast",
+        "z": "c358808b0e343ff4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1640,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "78c4039cc8e1776f",
+        "type": "ui_text",
+        "z": "c358808b0e343ff4",
+        "group": "961f66650c2f2aeb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Il paziente :",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 690,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "c10a109153457049",
+        "type": "debug",
+        "z": "c358808b0e343ff4",
+        "name": "debug 128",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 2920,
+        "wires": []
+    },
+    {
+        "id": "cf32f741c11aecb7",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.allerta",
+                "pt": "msg",
+                "to": "msg.payload.allerta +2",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "msg.payload.allerta",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 2720,
+        "wires": [
+            [
+                "c10a109153457049",
+                "ef83f2b112574893",
+                "62824150739d7218"
+            ]
+        ]
+    },
+    {
+        "id": "5ba130685ef0793c",
+        "type": "switch",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "property": "payload.covid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 2760,
+        "wires": [
+            [
+                "cf32f741c11aecb7"
+            ],
+            [
+                "c10a109153457049"
+            ]
+        ]
+    },
+    {
+        "id": "2d45b3337f6e7047",
+        "type": "ui_audio",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "group": "961f66650c2f2aeb",
+        "voice": "",
+        "always": "",
+        "x": 1240,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "ef83f2b112574893",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.allerta",
+                "pt": "msg",
+                "to": "",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 2420,
+        "wires": [
+            [
+                "2d45b3337f6e7047"
+            ]
+        ]
+    },
+    {
+        "id": "62824150739d7218",
+        "type": "switch",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "property": "payload.allerta",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1090,
+        "y": 2540,
+        "wires": [
+            [
+                "f1e02b0fa501ec64"
+            ]
+        ]
+    },
+    {
+        "id": "f1e02b0fa501ec64",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Dio besta",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1350,
+        "y": 2640,
+        "wires": [
+            [
+                "028e35cd77122e47"
+            ]
+        ]
+    },
+    {
+        "id": "8e1d6c550b4eb723",
+        "type": "ui_toast",
+        "z": "c358808b0e343ff4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 660,
+        "y": 2600,
+        "wires": []
+    },
+    {
+        "id": "54e7032d5e19eab0",
+        "type": "change",
+        "z": "c358808b0e343ff4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 2620,
+        "wires": [
+            [
+                "8e1d6c550b4eb723"
+            ]
+        ]
+    },
+    {
+        "id": "cbd7c24506459d64",
+        "type": "comment",
+        "z": "c358808b0e343ff4",
+        "name": "Form che aumenta lo stato di allerta se rispetta una condizione con checkbox",
+        "info": "",
+        "x": 540,
+        "y": 2420,
+        "wires": []
+    }
+]

@@ -1,0 +1,137 @@
+[
+    {
+        "id": "a707204480436b8d",
+        "type": "comment",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "ES5",
+        "info": "",
+        "x": 190,
+        "y": 3020,
+        "wires": []
+    },
+    {
+        "id": "5bde12b72b6826df",
+        "type": "unit-converter",
+        "z": "2fd1b00ea7ce1cee",
+        "category": "illuminance",
+        "inputUnit": "lx",
+        "outputUnit": "ft-cd",
+        "inputField": "payload",
+        "outputField": "payload",
+        "inputFieldType": "msg",
+        "outputFieldType": "msg",
+        "roundOutputField": false,
+        "outputFieldDecimals": 2,
+        "statusType": "none",
+        "name": "",
+        "x": 440,
+        "y": 3260,
+        "wires": [
+            [
+                "ec53a8b8f127c81a"
+            ]
+        ]
+    },
+    {
+        "id": "9f7fa0889d1da67b",
+        "type": "ui_text",
+        "z": "2fd1b00ea7ce1cee",
+        "group": "3634a49ec8d426eb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Risultato:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 860,
+        "y": 3240,
+        "wires": []
+    },
+    {
+        "id": "ec53a8b8f127c81a",
+        "type": "template",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Corrispondono a :{{payload}} ft",
+        "output": "str",
+        "x": 660,
+        "y": 3200,
+        "wires": [
+            [
+                "9f7fa0889d1da67b",
+                "7cec92ef1ac5ced6"
+            ]
+        ]
+    },
+    {
+        "id": "7cec92ef1ac5ced6",
+        "type": "debug",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "debug 144",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 3120,
+        "wires": []
+    },
+    {
+        "id": "0ff88a14994bdc25",
+        "type": "ui_text_input",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "label": "Inserisci un numero da convertire da LUX a FT",
+        "tooltip": "",
+        "group": "3634a49ec8d426eb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 380,
+        "y": 3160,
+        "wires": [
+            [
+                "5bde12b72b6826df"
+            ]
+        ]
+    },
+    {
+        "id": "3634a49ec8d426eb",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "90de066d58ec653e",
+        "order": 1,
+        "disp": true,
+        "width": 13
+    },
+    {
+        "id": "90de066d58ec653e",
+        "type": "ui_tab",
+        "name": "Giovanni Sello 5",
+        "icon": "dashboard",
+        "order": 12,
+        "disabled": false,
+        "hidden": false
+    }
+]

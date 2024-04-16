@@ -1,0 +1,183 @@
+[
+    {
+        "id": "95a306d8a3db11b6",
+        "type": "ui_form",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "label": "",
+        "group": "4d18fd9bf26adde4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Allerta",
+                "value": "allerta",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Covid",
+                "value": "covid",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "allerta": "",
+            "covid": false
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 330,
+        "y": 1280,
+        "wires": [
+            [
+                "09a3ca8ebd093a3c"
+            ]
+        ]
+    },
+    {
+        "id": "09a3ca8ebd093a3c",
+        "type": "switch",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "property": "payload.covid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 1320,
+        "wires": [
+            [
+                "7cf97f36fd083c12"
+            ]
+        ]
+    },
+    {
+        "id": "7cf97f36fd083c12",
+        "type": "change",
+        "z": "29d7643872c0caae",
+        "name": "Concat",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.allerta",
+                "pt": "msg",
+                "to": "payload.allerta + 2",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"Il paziente \" &msg.payload.name &\" \" & \"Ha uno stato di allerta di:\" &msg.payload.allerta",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 1420,
+        "wires": [
+            [
+                "f0cbdc93b3031a0e",
+                "a051015bc6ab98c0"
+            ]
+        ]
+    },
+    {
+        "id": "f0cbdc93b3031a0e",
+        "type": "ui_text_input",
+        "z": "29d7643872c0caae",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "4d18fd9bf26adde4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1080,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a051015bc6ab98c0",
+        "type": "debug",
+        "z": "29d7643872c0caae",
+        "name": "debug 139",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "3608ef4b67889319",
+        "type": "comment",
+        "z": "29d7643872c0caae",
+        "name": "Se spuntato il checkbox ==> condizione",
+        "info": "",
+        "x": 990,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "4d18fd9bf26adde4",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "aa6acd7b5b2c25e1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aa6acd7b5b2c25e1",
+        "type": "ui_tab",
+        "name": "Prova Finale Per Oggi",
+        "icon": "dashboard",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
+    }
+]

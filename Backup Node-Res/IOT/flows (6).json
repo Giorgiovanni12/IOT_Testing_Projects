@@ -1,0 +1,89 @@
+[
+    {
+        "id": "9a3dc1fd93b4062a",
+        "type": "inject",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "solution3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "[{\"name\":\"fred\",\"age\":25,\"email\":\"fred@acme.inc\"},{\"name\":\"jack\",\"age\":35,\"email\":\"jack@acme.inc\"},{\"name\":\"jill\",\"age\":30,\"email\":\"jill@acme.inc\"}]",
+        "payloadType": "json",
+        "x": 500,
+        "y": 3720,
+        "wires": [
+            [
+                "1ae3027947350f2b"
+            ]
+        ]
+    },
+    {
+        "id": "6f1eeceee064fa2d",
+        "type": "debug",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "debug 145",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 3720,
+        "wires": []
+    },
+    {
+        "id": "1ae3027947350f2b",
+        "type": "change",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "jill",
+                "pt": "msg",
+                "to": "msg.payload[2].name & \" is \" & msg.payload[2].age & \" mail address is  \" & msg.payload[2].email",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "jack",
+                "pt": "msg",
+                "to": "msg.payload[1].name & \" is \" & msg.payload[1].age & \" mail address is  \" & msg.payload[1].email ",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "fred",
+                "pt": "msg",
+                "to": "msg.payload[0].name & \" is \" & msg.payload[0].age & \" mail address is  \" & msg.payload[0].email ",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 3720,
+        "wires": [
+            [
+                "6f1eeceee064fa2d"
+            ]
+        ]
+    }
+]

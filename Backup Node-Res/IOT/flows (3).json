@@ -1,0 +1,222 @@
+[
+    {
+        "id": "4df71bc43294e59e",
+        "type": "comment",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "ES4",
+        "info": "Create una dashboard (che porti come nome il vostro cognome) che funga da landing page e permetta ad un utente di registrare \n\nnome (stringa)\ncognome (stringa) \netà (numero)\nmail (stringa)\npeso (numero)\nmaggiorenne (booleano / checkbox)\nstampate quanto registrato in un debug node e riproponete quanto raccolto in un altro gruppo della dashboard, concatenando tutto in un testo che dica:\n\n<nome> <cognome> ha <età> ed é <maggiorenne / minorenne>\n\nil variare del testo \"maggiorenne\" / \"minorenne\" deve essere vagliata da una condizione sul parametro booleano \"maggiorenne\"",
+        "x": 210,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "7bd3f3fecf714ea1",
+        "type": "ui_form",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "label": "",
+        "group": "b2f81760486cad5e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Nome",
+                "value": "nome",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Cognome",
+                "value": "cognome",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Eta",
+                "value": "eta",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Mail",
+                "value": "mail",
+                "type": "email",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Peso",
+                "value": "peso",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Maggiorenne",
+                "value": "maggiorenne",
+                "type": "checkbox",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "nome": "",
+            "cognome": "",
+            "eta": "",
+            "mail": "",
+            "peso": "",
+            "maggiorenne": false
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 170,
+        "y": 2120,
+        "wires": [
+            [
+                "59216cfa75969b64"
+            ]
+        ]
+    },
+    {
+        "id": "b2c86dc8649da8fd",
+        "type": "template",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.nome}} {{payload.cognome}} ha {{payload.eta}} ed è maggiorenne",
+        "output": "str",
+        "x": 540,
+        "y": 2100,
+        "wires": [
+            [
+                "10a247b5623cfd9a",
+                "329171f271c3f039"
+            ]
+        ]
+    },
+    {
+        "id": "10a247b5623cfd9a",
+        "type": "debug",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "debug 143",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "329171f271c3f039",
+        "type": "ui_text",
+        "z": "2fd1b00ea7ce1cee",
+        "group": "0711c79d2d8c89f4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Utente",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 790,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "2525822619e58438",
+        "type": "template",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.nome}} {{payload.cognome}} ha {{payload.eta}} ed è minorenne",
+        "output": "str",
+        "x": 540,
+        "y": 2260,
+        "wires": [
+            [
+                "329171f271c3f039",
+                "10a247b5623cfd9a"
+            ]
+        ]
+    },
+    {
+        "id": "59216cfa75969b64",
+        "type": "switch",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "property": "payload.maggiorenne",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 2160,
+        "wires": [
+            [
+                "b2c86dc8649da8fd"
+            ],
+            [
+                "2525822619e58438"
+            ]
+        ]
+    },
+    {
+        "id": "b2f81760486cad5e",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "84506a90f46dec20",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "0711c79d2d8c89f4",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "84506a90f46dec20",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "84506a90f46dec20",
+        "type": "ui_tab",
+        "name": "Giovanni Sello 4",
+        "icon": "dashboard",
+        "order": 11,
+        "disabled": false,
+        "hidden": false
+    }
+]

@@ -1,0 +1,186 @@
+[
+    {
+        "id": "f5e7828d39515136",
+        "type": "comment",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "Esercizio 3",
+        "info": "Visualizza i due dati in due diversi grafici o in un singolo grafico, in una dashboard che porti il tuo nome",
+        "x": 340,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "e41ff30e0387ea36",
+        "type": "inject",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "Temperature",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "temp",
+        "payload": "$random()*10",
+        "payloadType": "jsonata",
+        "x": 334,
+        "y": 1753,
+        "wires": [
+            [
+                "e801498973fd0396"
+            ]
+        ]
+    },
+    {
+        "id": "1f36c00f8f0f2fa2",
+        "type": "inject",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "Humidity",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Hum",
+        "payload": "$random()*100",
+        "payloadType": "jsonata",
+        "x": 344,
+        "y": 1813,
+        "wires": [
+            [
+                "598d7cdf9cbe1b85"
+            ]
+        ]
+    },
+    {
+        "id": "e801498973fd0396",
+        "type": "change",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "random temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "temperatura",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 1760,
+        "wires": [
+            [
+                "f57d3fa47ab589d0"
+            ]
+        ]
+    },
+    {
+        "id": "598d7cdf9cbe1b85",
+        "type": "change",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "random umidità",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "humidity",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 1860,
+        "wires": [
+            [
+                "f57d3fa47ab589d0"
+            ]
+        ]
+    },
+    {
+        "id": "f57d3fa47ab589d0",
+        "type": "ui_chart",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "group": "01d5ac336fc030ca",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 1800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "01d5ac336fc030ca",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "1c2f5a6bf350dbc8",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "1c2f5a6bf350dbc8",
+        "type": "ui_tab",
+        "name": "Giovanni Sello 3",
+        "icon": "dashboard",
+        "order": 10,
+        "disabled": false,
+        "hidden": false
+    }
+]

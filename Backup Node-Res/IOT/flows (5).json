@@ -1,0 +1,85 @@
+[
+    {
+        "id": "ea88c735b841b907",
+        "type": "comment",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "ES2",
+        "info": "",
+        "x": 930,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "74defd58d3c69b90",
+        "type": "inject",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "solution2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "[{\"name\":\"fred\",\"age\":25,\"email\":\"fred@acme.inc\",\"retirement\":67},{\"name\":\"jack\",\"age\":35,\"email\":\"jack@acme.inc\",\"retirement\":63},{\"name\":\"jill\",\"age\":30,\"email\":\"jill@acme.inc\",\"retirement\":60}]",
+        "payloadType": "json",
+        "x": 660,
+        "y": 1240,
+        "wires": [
+            [
+                "b7e95ddd3243b110"
+            ]
+        ]
+    },
+    {
+        "id": "64e4e13e2e64dc47",
+        "type": "debug",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "output2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "b7e95ddd3243b110",
+        "type": "change",
+        "z": "2fd1b00ea7ce1cee",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[0].name & \" \" & \"will retire in \" & (payload[0].retirement-payload[0].age) & \" \" & \"years   ,\" &\tpayload[1].name & \" \" & \"will retire in \" & (payload[1].retirement-payload[1].age) & \" \" & \"years   ,\" &\tpayload[2].name & \" \" & \"will retire in \" & (payload[2].retirement-payload[2].age) & \" \" & \"years\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1360,
+        "wires": [
+            [
+                "64e4e13e2e64dc47"
+            ]
+        ]
+    }
+]
